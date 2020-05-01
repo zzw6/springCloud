@@ -1,2 +1,10 @@
 server:
   port: 8081
+spring:
+  datasource:
+    username: root
+    password: root
+    url: jdbc:mysql://javalei.com:3306/cloud?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8
+    driver-class-name: com.mysql.jdbc.Driver
+mybatis:
+  type-aliases-package:
