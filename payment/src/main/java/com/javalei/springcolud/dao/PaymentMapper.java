@@ -1,7 +1,7 @@
 package com.javalei.springcolud.dao;
 
 
-import com.javalei.springcolud.entity.PaymentEntity;
+import com.javalei.commons.entity.PaymentEntity;
 import org.apache.ibatis.annotations.*;
 
 @Mapper

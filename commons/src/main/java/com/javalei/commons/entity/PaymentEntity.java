@@ -1,6 +1,5 @@
-package com.javalei.springcolud.entity;
+package com.javalei.commons.entity;
 
-import jdk.nashorn.internal.objects.annotations.Constructor;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
