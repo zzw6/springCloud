@@ -2,6 +2,7 @@ package com.javalei;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 
 /**
  * User: zzw
@@ -9,10 +10,11 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * Description: cloud
  */
 @SpringBootApplication
-public class springcolud {
+@EnableEurekaClient
+public class OrderMain80 {
 
     public static void main(String[] args) {
-        SpringApplication.run(springcolud.class,args);
+        SpringApplication.run(OrderMain80.class,args);
     }
 
 }

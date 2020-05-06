@@ -18,4 +18,5 @@ import lombok.ToString;
 public class PaymentEntity {
     private String id;
     private String name;
+
 }

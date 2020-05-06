@@ -2,6 +2,7 @@ package com.javalei.springcolud;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 
 /**
  * User: zzw
@@ -9,6 +10,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * Description: 主程序入口
  */
 @SpringBootApplication
+@EnableEurekaClient
 public class paymentMain {
 
     public static void main(String[] args) {

@@ -1,9 +1,7 @@
 package com.javalei.springcolud.action;
 
+import com.javalei.commons.entity.PaymentEntity;
 import com.javalei.springcolud.dao.PaymentMapper;
-import com.javalei.springcolud.entity.PaymentEntity;
-
-import lombok.extern.log4j.Log4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.PostMapping;

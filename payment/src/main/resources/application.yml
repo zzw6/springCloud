@@ -6,5 +6,13 @@ spring:
     password: root
     url: jdbc:mysql://javalei.com:3306/cloud?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8
     driver-class-name: com.mysql.jdbc.Driver
+  application:
+    name: Payment-Server
 mybatis:
   type-aliases-package:
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:7001/eureka
+    fetch-registry: true
+    register-with-eureka: true
