@@ -1,13 +1,16 @@
 package com.javalei.springcolud.action;
 
-import com.javalei.commons.entity.PaymentEntity;
-import com.javalei.springcolud.dao.PaymentMapper;
+ import com.javalei.springcolud.dao.PaymentMapper;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.util.StringUtils;
+ import org.springframework.beans.factory.annotation.Value;
+ import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+ import java.util.HashMap;
+ import java.util.Map;
 
 /**
  * User: zzw
@@ -21,23 +24,23 @@ public class PaymentAction {
     @Autowired
     private PaymentMapper payDao;
 
+    @Value("${server.port}")
+    private String port;
 
     @PostMapping("/addPayment")
     //post 请求记得需要配置 RequestBody 注解
-    public PaymentEntity insert(@RequestBody  PaymentEntity entity){
+    public Map<String,String> insert(@RequestBody String entity){
 
-        System.out.println(entity.toString());
 
-        if(entity==null|| StringUtils.isEmpty(entity.getName())){
-            return null;
-        }
-        payDao.insertPayment(entity);
-        return entity;
+        Map<String,String> m=new HashMap<>();
+        m.put("test",entity+"---port:"+port);
+
+        return m;
     }
 
 
     @RequestMapping("/getPayment")
-    public PaymentEntity insert(int id){
+    public Object insert(int id){
         return payDao.getPayment4Id(id);
     }
 

@@ -9,3 +9,6 @@ eureka:
     register-with-eureka: true
     service-url:
       defaultZone: http://127.0.0.1:7001/eureka
+  instance:
+    instance-id: Order-Server
+    prefer-ip-address: true
