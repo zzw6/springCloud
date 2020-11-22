@@ -7,8 +7,23 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="eurekaserver" />
+        <module name="clould-consumer-feign-order80" />
+        <module name="Order80" />
+        <module name="payment81" />
         <module name="payment" />
+        <module name="enrekaserver2" />
+        <module name="commons" />
       </profile>
     </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="clould-consumer-feign-order80" options="-parameters" />
+      <module name="commons" options="-parameters" />
+      <module name="enrekaserver2" options="-parameters" />
+      <module name="eurekaserver" options="-parameters" />
+      <module name="payment81" options="-parameters" />
+    </option>
   </component>
 </project>

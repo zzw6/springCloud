@@ -1,0 +1,13 @@
+server:
+  port: 81
+eureka:
+  client:
+    fetch-registry: true
+    service-url:
+      defaultZone: http://127.0.0.1:7001/eureka
+spring:
+  application:
+    name: feignOrder-Server
+logging:
+  level:
+    com.javalei.clouldconsumerfeignorder80.service.PaymentFeignService: debug

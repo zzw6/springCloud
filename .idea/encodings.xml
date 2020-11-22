@@ -1,8 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$PROJECT_DIR$/Order80/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Order80/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/clould-consumer-feign-order80/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/commons/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/enrekaserver2/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/eurekaserver/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/payment/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/payment/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/payment81/src/main/java" charset="UTF-8" />
     <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>
